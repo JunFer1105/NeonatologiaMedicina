@@ -1,0 +1,28 @@
+{
+  "name": "webpage-neonatal",
+  "version": "1.0.0",
+  "description": "Proyecto aplicacion web, medicina a domicilio para neonatales.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JunFer1105/MedicinaNeonatal.git"
+  },
+  "keywords": [
+    "medinaneonatal"
+  ],
+  "author": "Juan Fernando Arango",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JunFer1105/MedicinaNeonatal/issues"
+  },
+  "homepage": "https://github.com/JunFer1105/MedicinaNeonatal#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
