@@ -5,6 +5,6 @@ app.get('/',(req,res)=>{
 	res.send('Neonatologia');
 });
 
-app.listen(3000, ()=> {
-	console.log('Escuchando en el puerto 3000');
+app.listen(process.env.PORT, ()=> {
+	console.log('Escuchando en el puerto 3000 u otro');
 });
