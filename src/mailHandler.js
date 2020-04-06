@@ -10,19 +10,26 @@ var transporter = nodemailer.createTransport({
   }
 });
 
-var mensaje = "Prueba";
+var enviarMesaje(){
 
-var mailOptions = {
-  from: 'neonatologo.carlossanchez@gmail.com',
-  to: 'neonatologo.carlossanchez@yahoo.com',
-  subject: 'Asunto Del Correo',
-  text: mensaje
+  var mensaje = "Prueba";
+
+  var mailOptions = {
+    from: 'neonatologo.carlossanchez@gmail.com',
+    to: 'neonatologo.carlossanchez@yahoo.com',
+    subject: 'Asunto Del Correo',
+    text: mensaje
+  };
+
+  transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Email enviado: ' + info.response);
+    }
+  });
+}
+
+module.exorts = {
+  enviarMesaje
 };
-
-transporter.sendMail(mailOptions, function(error, info){
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('Email enviado: ' + info.response);
-  }
-});

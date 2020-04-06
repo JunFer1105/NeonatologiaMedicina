@@ -3436,9 +3436,8 @@
 			position: absolute;
 			top: 0;
 		}
-
 			#header > .logo a {
-				font-size: 1.25em;
+				font-size: 2em;
 				color: #3498db;
 			}
 
@@ -3751,7 +3750,7 @@
 
 		#banner p {
 			color: rgba(255, 255, 255, 0.85);
-			font-size: 1.75em;
+			font-size: 2.5em;
 		}
 
 	@-moz-keyframes more {
