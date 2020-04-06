@@ -4,7 +4,7 @@
   "description": "Proyecto aplicacion web, medicina a domicilio para neonatales.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,8 @@
   "homepage": "https://github.com/JunFer1105/MedicinaNeonatal#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-hbs": "^2.3.3",
+    "hbs": "^4.1.1",
     "pug": "^2.0.4"
   },
   "devDependencies": {
