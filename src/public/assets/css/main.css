@@ -2096,7 +2096,7 @@
 
 					.flex.flex-2 .col.col1 .image, .flex.flex-2 .col.col2 .image {
 						max-width: 60%;
-						margin: 0 auto 2em auto;
+						margin: 0em auto 2em auto;
 					}
 
 			}
@@ -3501,6 +3501,10 @@
 				#header > a {
 					padding: 0 0.5em;
 				}
+				#header > .logo a {
+					font-size: 1.25em;
+
+				}
 
 					#header > a + a[href="#menu"]:last-child {
 						padding-left: 1em;
@@ -3550,7 +3554,7 @@
 			height: 44px;
 			line-height: 44px;
 		}
-
+			
 			#header > h1 {
 				left: 1em;
 			}
@@ -3824,6 +3828,7 @@
 					display: none;
 				}
 
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3850,6 +3855,8 @@
 				#banner .button {
 					width: 100%;
 				}
+
+
 
 		}
 
