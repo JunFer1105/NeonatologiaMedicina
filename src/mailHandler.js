@@ -19,7 +19,7 @@ module.exports.sendEmail = function (nombre, email, telefono, tipo, msj){
 
   var mailOptions = {
     from: '"Consultas pagina web" <contacto@neonatologocarlossanchez.com>',
-    to: 'contacto@neonatologocarlossanchez.com',
+    to: 'neonatologo.carlossanchez@gmail.com',
     subject: 'Solicitud "neonatologocarlossanchez.com"',
     html: '<h3>NeonatologoCarlosSanchez.com</h3>'+
       '<h5>Nombre  </h5><p>'+nombre +'</p>'+
