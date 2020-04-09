@@ -2,8 +2,11 @@ const express = require('express');
 const app= express();
 const path = require('path');
 const exphbs = require('express-hbs');
+const bodyParser = require('body-parser')
+var mailHandler = require('./mailHandler');
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.urlencoded());
 
 app.set('views', path.join(__dirname, 'views')); 
 
@@ -23,6 +26,12 @@ app.get('/galeria',(req,res)=>{
 
 app.get('/contact',(req,res)=>{
 	res.render('partials/contact',{layout: 'layouts/plantilla'});
+});
+
+app.post('/enviarCorreo',(req,res)=>{
+	console.log(req.body);
+	mailHandler.sendEmail(req.body.name, req.body.email, req.body.phone, req.body.category, req.body.message);
+	res.redirect('/');
 });
 
 
