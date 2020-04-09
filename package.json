@@ -1,6 +1,6 @@
 {
   "name": "webpage-neonatal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Proyecto aplicacion web, medicina a domicilio para neonatales.",
   "main": "app.js",
   "scripts": {
